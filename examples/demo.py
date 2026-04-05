@@ -28,22 +28,22 @@ def main():
     # Load time log entries from a CSV file.
     print("📝 Example: load_timelog()")
     result = load_timelog(
-        file_path="sample.txt"  # Replace with actual file path
+        file_path="sample.txt"
     )
     print(f"   Result: {result}")
     print()
     # Append a single time entry to the CSV log, creating the file if needed.
     print("📝 Example: save_time_entry()")
     result = save_time_entry(
-        entry="Today was a great day. I finished my project and went for a walk.",
-        log_file="sample.txt"
+        entry={},
+        log_file="app.log"
     )
     print(f"   Result: {result}")
     print()
     # Compute total hours per category.
     print("📝 Example: compute_time_breakdown()")
     result = compute_time_breakdown(
-        entries=5
+        entries=[{"key": "value"}]
     )
     print(f"   Result: {result}")
     print()
